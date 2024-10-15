@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="inputField">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Product"><br><br>
+        <label for="inputField">Quantity:</label>
+        <input type="text" id="product-quantity" name="product-quantity" placeholder="Quantity"><br><br>
+        <label for="inputField">Product Price:</label>
+        <input type="text"  id="product-price" name="product-price" placeholder="Quantity"><br><br>
+        <button class="btn" onclick="handleProduct()">Add Product</button>
+    </div>
+<br>
+
+    <div class="container">
+        
+        <table id="product-table" border="1" >
+            <thead>
+                
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Products will be dynamically added here -->
+            </tbody>
+            <p id="message"></p>
+        </table>
+    </div>
+</body>
+<script src="./localstore.js"></script>
+</html>
